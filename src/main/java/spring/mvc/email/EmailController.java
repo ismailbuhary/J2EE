@@ -22,13 +22,13 @@ public class EmailController {
 	public ModelAndView email() {
 
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("from", "tunatore@gmail.com");						
-		model.put("subject", "hello springmvc-angularjs-html5");
-		model.put("to", "tunatore@outlook.com"); //Attention	
+		model.put("from", "ismailbuhary@gmail.com");						
+		model.put("subject", "hello Ismail");
+		model.put("to", "mibuhary@gmail.com"); //Attention	
 		model.put("ccList", new ArrayList<String>());
 		model.put("bccList", new ArrayList<String>());
 		model.put("urludemy", "https://www.udemy.com/spring-framework-4-course-and-core-spring-certification/"); 
-		model.put("username", "Tuna Tore");
+		model.put("username", "mbuhary");
 		
 		boolean result = emailService.sendEmail("registered.vm", model);
 		if(result == true) {
